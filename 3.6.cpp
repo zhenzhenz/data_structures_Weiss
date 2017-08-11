@@ -18,7 +18,8 @@ List add(List a, List b)
 		}
 		else
 		{
-			pushBack(ha->_coe + hb->_coe, ha->_exp + hb->_exp, result);
+			if (ha->_coe + hb->_coe != 0)
+				pushBack(ha->_coe + hb->_coe, ha->_exp, result);
 			ha = ha->_next;
 			hb = hb->_next;
 		}
